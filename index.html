@@ -191,17 +191,17 @@
   }
 
   .product-img-wrap {
-    width: 100px;
+    width: 110px;
     flex-shrink: 0;
     background: var(--creme2);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    padding: 14px;
   }
   .product-img-wrap img {
-    width: 76px;
-    height: 76px;
+    width: 82px;
+    height: 82px;
     object-fit: contain;
     border-radius: 10px;
   }
@@ -218,7 +218,7 @@
 
   .product-info {
     flex: 1;
-    padding: 14px 14px 14px 4px;
+    padding: 14px 16px 14px 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -307,54 +307,46 @@
     position: relative;
     overflow: hidden;
   }
-  .product-card-featured::before {
-    content: '⭐ DESTAQUE DA SEMANA';
-    position: absolute;
-    top: 16px; right: -28px;
-    background: linear-gradient(135deg, var(--amarelo-escuro), var(--amarelo));
-    color: #5A3200;
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: .08em;
-    padding: 6px 44px;
-    transform: rotate(45deg);
-    box-shadow: 0 2px 8px rgba(245,166,35,.4);
-  }
+  .product-card-featured::before { display: none; }
   .product-card-featured:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 40px rgba(245,166,35,.3);
   }
 
-  .featured-inner { display: flex; gap: 16px; align-items: center; }
+  .featured-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
   .featured-img {
-    width: 110px; height: 110px;
+    width: 160px; height: 160px;
     object-fit: contain;
-    border-radius: 14px;
+    border-radius: 16px;
     background: var(--creme2);
-    padding: 6px;
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(45,27,46,.1);
+    padding: 8px;
+    box-shadow: 0 6px 20px rgba(45,27,46,.12);
   }
   .featured-img-placeholder {
-    width: 110px; height: 110px;
-    border-radius: 14px;
+    width: 160px; height: 160px;
+    border-radius: 16px;
     background: linear-gradient(135deg, #FFE4EC, #FFF0C0);
     display: flex; align-items: center; justify-content: center;
-    font-size: 48px;
-    flex-shrink: 0;
+    font-size: 56px;
   }
-  .featured-body { flex: 1; }
-  .featured-store { font-size: 10px; font-weight: 800; letter-spacing: .06em; color: var(--texto2); text-transform: uppercase; margin-bottom: 4px; }
-  .featured-name { font-size: 14px; font-weight: 800; color: var(--texto); line-height: 1.3; margin-bottom: 10px; }
-  .featured-prices { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .featured-old { font-size: 12px; color: var(--texto2); text-decoration: line-through; font-weight: 600; }
-  .featured-new { font-family: 'Baloo 2', sans-serif; font-size: 26px; font-weight: 800; color: var(--rosa-escuro); line-height: 1; }
+  .featured-body { width: 100%; }
+  .featured-store { font-size: 10px; font-weight: 800; letter-spacing: .06em; color: var(--texto2); text-transform: uppercase; margin-bottom: 6px; }
+  .featured-name { font-size: 15px; font-weight: 800; color: var(--texto); line-height: 1.35; margin-bottom: 12px; }
+  .featured-prices { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .featured-old { font-size: 13px; color: var(--texto2); text-decoration: line-through; font-weight: 600; }
+  .featured-new { font-family: 'Baloo 2', sans-serif; font-size: 28px; font-weight: 800; color: var(--rosa-escuro); line-height: 1; }
   .featured-discount {
     background: linear-gradient(135deg, #ff3d6e, #c0234f);
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 900;
-    padding: 5px 12px;
+    padding: 6px 14px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(240,62,110,.4);
     animation: pulseBadge 2s ease-in-out infinite;
