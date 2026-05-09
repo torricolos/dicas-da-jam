@@ -466,6 +466,55 @@
   }
   .featured-cta:hover { opacity: .88; transform: translateY(-1px); }
 
+  /* ── CONTADOR ── */
+  .countdown-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 12px 0 4px;
+  }
+  .countdown-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: #fbbf24;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    white-space: nowrap;
+  }
+  .countdown-blocks { display: flex; align-items: center; gap: 6px; }
+  .countdown-block { text-align: center; }
+  .countdown-num {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+    border-radius: 8px;
+    padding: 2px 8px;
+    min-width: 38px;
+    display: block;
+    line-height: 1.2;
+  }
+  .countdown-unit {
+    font-size: 9px;
+    font-weight: 700;
+    color: rgba(255,255,255,.5);
+    text-transform: uppercase;
+    display: block;
+    margin-top: 2px;
+  }
+  .countdown-sep {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fbbf24;
+    margin-bottom: 10px;
+    animation: pulseBadge 1s ease-in-out infinite;
+  }
+
   /* ── FOOTER ── */
   .footer {
     text-align: center;
@@ -631,6 +680,25 @@
         </div>
       </div>
     </div>
+    <div class="countdown-wrap">
+      <span class="countdown-label">🔥 Oferta encerra em</span>
+      <div class="countdown-blocks">
+        <div class="countdown-block">
+          <span class="countdown-num" id="cd-h">00</span>
+          <span class="countdown-unit">horas</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block">
+          <span class="countdown-num" id="cd-m">00</span>
+          <span class="countdown-unit">min</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block">
+          <span class="countdown-num" id="cd-s">00</span>
+          <span class="countdown-unit">seg</span>
+        </div>
+      </div>
+    </div>
     <span class="featured-cta">🛒 Ver oferta no Mercado Livre →</span>
   </a>
 
@@ -758,6 +826,23 @@
   </div>
 
 </div>
+
+<script>
+  function updateCountdown() {
+    const now = new Date();
+    const midnight = new Date();
+    midnight.setHours(23, 59, 59, 0);
+    const diff = midnight - now;
+    const h = Math.floor(diff / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
 
 <!-- STICKY CTA -->
 <div class="sticky-cta">
