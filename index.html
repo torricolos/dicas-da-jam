@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dicas da Jam — Promoções do dia</title>
+<title>Dicas da Jam — Promoções do dia | Melhores Ofertas</title>
+<meta name="description" content="Promoções garimpadas todo dia no Mercado Livre, Amazon e Shopee. Entre no grupo VIP e receba 5 ofertas por dia no WhatsApp. Totalmente grátis!">
+<meta name="keywords" content="promoções, ofertas, desconto, mercado livre, amazon, shopee, achados, grupo whatsapp">
+<meta property="og:title" content="Dicas da Jam — Promoções do dia">
+<meta property="og:description" content="Receba as melhores ofertas garimpadas todo dia no WhatsApp. Grátis!">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F03E6E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -144,6 +150,92 @@
     color: rgba(255,255,255,.8);
     flex-shrink: 0;
   }
+  .vip-members {
+    font-size: 11px;
+    color: rgba(255,255,255,.75);
+    margin-top: 5px;
+    font-weight: 700;
+    background: rgba(0,0,0,.15);
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+
+  /* ── COMO FUNCIONA ── */
+  .how-section { margin: 28px 0 8px; animation: fadeUp .6s ease both; }
+  .how-title {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 16px; font-weight: 800;
+    color: var(--texto); text-align: center;
+    margin-bottom: 14px;
+  }
+  .how-steps { display: flex; gap: 10px; justify-content: space-between; }
+  .how-step {
+    flex: 1;
+    background: var(--branco);
+    border-radius: 16px;
+    padding: 14px 10px;
+    text-align: center;
+    box-shadow: 0 3px 14px rgba(45,27,46,.07);
+    border: 1.5px solid rgba(240,62,110,.08);
+  }
+  .how-step-icon { font-size: 26px; margin-bottom: 6px; }
+  .how-step-title { font-size: 12px; font-weight: 800; color: var(--texto); margin-bottom: 3px; }
+  .how-step-desc { font-size: 10px; color: var(--texto2); font-weight: 600; line-height: 1.4; }
+  .how-step-num {
+    display: inline-block;
+    width: 20px; height: 20px;
+    background: var(--rosa);
+    color: #fff;
+    font-size: 11px; font-weight: 900;
+    border-radius: 50%;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  /* ── BADGE URGÊNCIA ── */
+  .urgency-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    font-weight: 800;
+    color: #b45309;
+    background: #fef3c7;
+    border: 1px solid #fcd34d;
+    border-radius: 6px;
+    padding: 2px 7px;
+    margin-bottom: 4px;
+  }
+
+  /* ── STICKY CTA ── */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 999;
+    padding: 12px 16px 16px;
+    background: linear-gradient(to top, rgba(255,245,236,1) 70%, transparent);
+  }
+  .sticky-cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #25D366, #128C5E);
+    color: #fff;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 14px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    box-shadow: 0 6px 24px rgba(37,211,102,.45);
+    animation: pulseBadge 2.5s ease-in-out infinite;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .sticky-cta svg { width: 20px; height: 20px; flex-shrink: 0; }
+  .page { padding-bottom: 100px; }
 
   /* ── SEÇÃO TÍTULO ── */
   .section-title {
@@ -481,6 +573,7 @@
     <div class="vip-text">
       <div class="vip-title">Entre no Grupo VIP</div>
       <div class="vip-sub">Receba 5 promoções todo dia · Grátis por tempo limitado</div>
+      <div class="vip-members">👥 +2.400 membros já economizando</div>
     </div>
     <div class="vip-arrow">›</div>
   </a>
@@ -491,6 +584,31 @@
     <div class="security-badge-text">
       <span>Site Seguro & Verificado</span>
       Indicamos apenas lojas confiáveis e com boa reputação
+    </div>
+  </div>
+
+  <!-- COMO FUNCIONA -->
+  <div class="how-section">
+    <div class="how-title">✨ Como funciona</div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <div class="how-step-icon">🔍</div>
+        <div class="how-step-title">Garimpamos</div>
+        <div class="how-step-desc">Buscamos as melhores ofertas do dia</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <div class="how-step-icon">💬</div>
+        <div class="how-step-title">Enviamos</div>
+        <div class="how-step-desc">Direto no seu WhatsApp todo dia</div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <div class="how-step-icon">💰</div>
+        <div class="how-step-title">Você economiza</div>
+        <div class="how-step-desc">Compra nas lojas oficiais com segurança</div>
+      </div>
     </div>
   </div>
 
@@ -530,6 +648,7 @@
       </div>
       <div class="product-info">
         <div>
+          <div class="urgency-badge">⏰ Oferta por tempo limitado</div>
           <div class="product-store"><span class="store-dot"></span> Mercado Livre</div>
           <div class="product-name">Creatina Monohidratada 250g Growth Supplements — Sem Sabor em Pó</div>
         </div>
@@ -550,6 +669,7 @@
       </div>
       <div class="product-info">
         <div>
+          <div class="urgency-badge">⏰ Oferta por tempo limitado</div>
           <div class="product-store"><span class="store-dot"></span> Amazon Brasil</div>
           <div class="product-name">Apple iPhone 16e 128GB — Preto</div>
         </div>
@@ -570,6 +690,7 @@
       </div>
       <div class="product-info">
         <div>
+          <div class="urgency-badge">⏰ Oferta por tempo limitado</div>
           <div class="product-store"><span class="store-dot"></span> Mercado Livre</div>
           <div class="product-name">Mangueira Jardim 20m com Esguicho Trançada Reforçada Flexível — Marqs Home</div>
         </div>
@@ -590,6 +711,7 @@
       </div>
       <div class="product-info">
         <div>
+          <div class="urgency-badge">⚡ Oferta Relâmpago · Encerra hoje</div>
           <div class="product-store"><span class="store-dot"></span> Mercado Livre</div>
           <div class="product-name">Carregador Celular 120W Rápido + Cabo Tipo-C — Compatível Xiaomi/Poco/Redmi</div>
         </div>
@@ -636,5 +758,14 @@
   </div>
 
 </div>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <a href="https://chat.whatsapp.com/BRmlS8sliyE4SmPBfGwM1R" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Entrar no Grupo VIP — Grátis
+  </a>
+</div>
+
 </body>
 </html>
