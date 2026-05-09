@@ -401,6 +401,37 @@
   .products .product-card:nth-child(3) { animation-delay: .15s; }
   .products .product-card:nth-child(4) { animation-delay: .20s; }
 
+  /* ── SELO DE SEGURANÇA ── */
+  .security-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    border: 1.5px solid #a5d6a7;
+    border-radius: 14px;
+    padding: 12px 18px;
+    margin: 20px 0 0;
+    animation: fadeUp .6s ease both;
+  }
+  .security-badge-icon { font-size: 26px; }
+  .security-badge-text { font-size: 12px; color: #2e7d32; font-weight: 700; line-height: 1.4; }
+  .security-badge-text span { display: block; font-weight: 800; font-size: 13px; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer {
+    margin-top: 24px;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(240,62,110,0.12);
+    font-size: 11px;
+    color: var(--texto2);
+    text-align: center;
+    line-height: 1.6;
+  }
+  .disclaimer strong { color: var(--texto); }
+
   /* ── RESPONSIVO ── */
   @media (max-width: 360px) {
     .product-img-wrap { width: 84px; }
@@ -431,6 +462,15 @@
     </div>
     <div class="vip-arrow">›</div>
   </a>
+
+  <!-- SELO DE SEGURANÇA -->
+  <div class="security-badge">
+    <div class="security-badge-icon">🔒</div>
+    <div class="security-badge-text">
+      <span>Site Seguro & Verificado</span>
+      Indicamos apenas lojas confiáveis e com boa reputação
+    </div>
+  </div>
 
   <!-- PRODUTO DESTAQUE -->
   <div class="section-title">
@@ -510,9 +550,15 @@
     <div class="footer-sub">Promoções garimpadas todo dia com carinho</div>
     <div class="footer-links">
       <a class="footer-link" href="https://chat.whatsapp.com/BRmlS8sliyE4SmPBfGwM1R">💬 WhatsApp</a>
-      <a class="footer-link" href="#">📸 Instagram</a>
-      <a class="footer-link" href="#">🎵 TikTok</a>
+      <a class="footer-link" href="https://www.instagram.com/dicas_da_jam/">📸 Instagram</a>
+      <a class="footer-link" href="https://www.tiktok.com/@mktnowpromo">🎵 TikTok</a>
+      <a class="footer-link" href="https://www.facebook.com/people/Dicas-da-Jam/61589241065342/">👍 Facebook</a>
     </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <strong>⚠️ Aviso importante:</strong> A Dicas da Jam é uma página de <strong>indicação de produtos</strong> e não realiza vendas diretamente. Todas as ofertas apresentadas são de sites seguros e com boa reputação, como <strong>Mercado Livre, Amazon e Shopee</strong>. Ao clicar em qualquer oferta, você será redirecionado ao site oficial do vendedor.
   </div>
 
 </div>
